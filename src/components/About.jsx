@@ -6,7 +6,7 @@ import Expericence from "./Tabs/Expericence";
 import { motion, AnimatePresence } from "framer-motion";
 import Certificates from "./Tabs/Certificates";
 const About = () => {
-  const tabs = ["Education", "Experience", "Certificates"];
+  const tabs = ["Experience", "Education", "Certificates"];
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
   const displayTabContent = () => {
     switch (selectedTab) {
@@ -47,11 +47,13 @@ const About = () => {
                 <div
                   key={key}
                   className={
-                    item === selectedTab ? "selected text-danger  " : ""
+                    item === selectedTab
+                      ? "selected text-danger "
+                      : "text-warning"
                   }
                   onClick={() => setSelectedTab(item)}
                 >
-                  <h5>{`${item} `}</h5>
+                  <h5 className="">{`${item} `}</h5>
                   {item === selectedTab ? (
                     // link-underline-info
                     <motion.div className="underline " layoutId="underline" />

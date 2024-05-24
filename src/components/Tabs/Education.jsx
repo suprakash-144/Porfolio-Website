@@ -2,6 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 const Education = () => {
+  const imageLoader = ({ src, width, quality }) => {
+    return `${src}`;
+  };
   return (
     <div>
       <div className="row overflow-auto">

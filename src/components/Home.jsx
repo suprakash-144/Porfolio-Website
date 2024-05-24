@@ -52,14 +52,14 @@ const Home = () => {
                 <FaLinkedin />{" "}
               </Link>
               <Link
-                href={"https://www.linkedin.com/in/suprakash-gorai/"}
+                href={"https://github.com/suprakash-144"}
                 referrerPolicy=""
                 target="_blank"
               >
                 <FaGithub />
               </Link>
               <Link
-                href={"https://www.linkedin.com/in/suprakash-gorai/"}
+                href={"https://linktr.ee/suprakash_144"}
                 referrerPolicy=""
                 target="_blank"
               >

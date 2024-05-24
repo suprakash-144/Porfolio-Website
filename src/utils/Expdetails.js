@@ -1,0 +1,2 @@
+const expdetails = [{}];
+export { expdetails };

@@ -24,12 +24,31 @@ const item = {
 };
 const Skills = () => {
   return (
-    <div className="container my-5" id="Skills">
+    <div className="container my-5 py-5" id="Skills">
       <h2>Skills</h2>
-      <div className="row">
+      <div className="row pt-4">
         <div className="col-3">
-          <p>tech</p>
-          <motion.ul
+          <h5 className="mb-3">Languages </h5>
+          <motion.div
+            className=" "
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+          >
+            {languages.map((items, index) => (
+              <motion.div
+                key={index}
+                className="badge border mx-1 lh-base my-1"
+                variants={item}
+              >
+                {items}
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+        <div className="col-3">
+          <p className="">FrontEnd </p>
+          <motion.div
             className=" "
             variants={container}
             initial="hidden"
@@ -44,12 +63,12 @@ const Skills = () => {
                 {items}
               </motion.div>
             ))}
-          </motion.ul>
+          </motion.div>
         </div>
         <div className="col-3">
-          <p>tech</p>
+          <p>BackEnd</p>
 
-          <motion.ul
+          <motion.div
             className=" "
             variants={container}
             initial="hidden"
@@ -64,12 +83,12 @@ const Skills = () => {
                 {items}
               </motion.div>
             ))}
-          </motion.ul>
+          </motion.div>
         </div>
         <div className="col-3">
-          <p>tech</p>
-          <motion.ul
-            className=" "
+          <p>Database</p>
+          <motion.div
+            className=""
             variants={container}
             initial="hidden"
             whileInView="visible"
@@ -83,26 +102,7 @@ const Skills = () => {
                 {items}
               </motion.div>
             ))}
-          </motion.ul>
-        </div>
-        <div className="col-3">
-          <p>tech</p>
-          <motion.ul
-            className=" "
-            variants={container}
-            initial="hidden"
-            whileInView="visible"
-          >
-            {languages.map((items, index) => (
-              <motion.div
-                key={index}
-                className="badge border mx-1"
-                variants={item}
-              >
-                {items}
-              </motion.div>
-            ))}
-          </motion.ul>
+          </motion.div>
         </div>
       </div>
     </div>

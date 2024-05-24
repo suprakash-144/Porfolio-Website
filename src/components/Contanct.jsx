@@ -18,6 +18,9 @@ const Contanct = () => {
     <div id="Contact" className="container mt-5 mb-4">
       <div className="row">
         <div className="col-lg-6 col-sm-12">
+          <h1 className="ps-5">
+            <span className="text-warning">Send </span> A Message
+          </h1>
           <form
             className="d-flex gap-3 flex-column w-75 ps-5 pt-5"
             onSubmit={handleSubmit(onSubmit)}
