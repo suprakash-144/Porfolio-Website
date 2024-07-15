@@ -7,20 +7,24 @@ const Expericence = () => {
   };
   return (
     <div className="">
-      <div className="row overflow-auto">
-        <div className="d-flex ">
-          <Image
-            loader={imageLoader}
-            src={
-              "https://celebaltech.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcelebal-logo.4c6b3a75.png&w=3840&q=75"
-            }
-            alt="logo"
-            height={100}
-            width={200}
-          />
+      <div className="row ">
+        <div className="d-flex gap-3">
+          <div className="d-flex align-items-center justify-content-center">
+            <Image
+              loader={imageLoader}
+              src={
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9ki38FE018uXFV_rIVJ_4KAGRiO0rzDHIQ&s"
+              }
+              alt="logo"
+              height={100}
+              width={100}
+              unoptimized
+              className="img-fluid rounded-3"
+            />
+          </div>
           <div className="d-flex flex-column">
-            <p className="">Celebal Technologies</p>
-            <div className="">Summer Internship (Node js)</div>
+            <p className="fs-5 fw-bold">Celebal Technologies</p>
+            <div className="fs-5 opacity-75">Summer Internship (Node js)</div>
             <div className="opacity-50">May 2024 - July 2024</div>
           </div>
         </div>

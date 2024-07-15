@@ -12,6 +12,18 @@ const Projectdetails = [
     image: [],
   },
   {
+    title: "Realtime-Collaborative Code Editor",
+    description: {
+      Intro: "",
+      "Tech Stack": ["MERN", "Socket.io", "Bootstrap 5"],
+      Details: "",
+      Time: "",
+    },
+    link: "https://try-t34g.onrender.com/",
+    repo: "https://github.com/suprakash-144/Real-time-code-editor",
+    image: [],
+  },
+  {
     title: "Job Portal Web app",
     description: {
       Intro: "",
@@ -44,12 +56,48 @@ const Projectdetails = [
       Details: "",
       Time: "",
     },
+    link: "https://chatbot-nu1j.onrender.com/",
+    repo: "https://github.com/suprakash-144/Chat-Bot",
+    image: [],
+  },
+  {
+    title: "Weather Forcaste",
+    description: {
+      Intro: "",
+      "Tech Stack": ["MERN", "Cloudinary", "Bootstrap 5"],
+      Details: "",
+      Time: "",
+    },
     link: "asd",
     repo: "asd",
     image: [],
   },
   {
-    title: "Weather Forcaste",
+    title: "Music Player",
+    description: {
+      Intro: "",
+      "Tech Stack": ["MERN", "Cloudinary", "Bootstrap 5"],
+      Details: "",
+      Time: "",
+    },
+    link: "asd",
+    repo: "asd",
+    image: [],
+  },
+  {
+    title: "Password Generatorr",
+    description: {
+      Intro: "",
+      "Tech Stack": ["MERN", "Cloudinary", "Bootstrap 5"],
+      Details: "",
+      Time: "",
+    },
+    link: "asd",
+    repo: "asd",
+    image: [],
+  },
+  {
+    title: "Alfersco",
     description: {
       Intro: "",
       "Tech Stack": ["MERN", "Cloudinary", "Bootstrap 5"],

@@ -1,6 +1,6 @@
 import { Projectdetails } from "@/utils/Projectdet";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -22,23 +22,33 @@ const item = {
 };
 
 const Project = () => {
+  const [selectedId, setSelectedId] = useState(null);
   return (
     <div className="container my-5" id="Project">
       <h2>Projects</h2>
-      <motion.ul
-        className="row row-cols-3 row-cols-sm-1 row-cols-md-3 py-3"
+      <motion.div
+        className="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-3"
         variants={container}
         initial="hidden"
-        // animate="visible"
         viewport={{ once: true }}
         whileInView="visible"
       >
         {Projectdetails.map((items, index) => (
           <motion.div key={index} className="col" variants={item}>
-            <div className="box">{items.title}</div>
+            <motion.div layoutId={index} onClick={() => setSelectedId(index)}>
+              <motion.h2>{items.title}</motion.h2>
+            </motion.div>
           </motion.div>
         ))}
-      </motion.ul>
+        {/* <AnimatePresence>
+          {selectedId && (
+            <motion.div layoutId={selectedId}>
+              <motion.h2>{item.title}</motion.h2>
+              <motion.button onClick={() => setSelectedId(null)} />
+            </motion.div>
+          )}
+        </AnimatePresence> */}
+      </motion.div>
     </div>
   );
 };

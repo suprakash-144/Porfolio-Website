@@ -7,17 +7,30 @@ const Education = () => {
   };
   return (
     <div>
-      <div className="row overflow-auto">
-        <div className="d-flex justify-content-between">
-          <div className="">
-            <Image src={""} alt="" />
+      <div className="row ">
+        <div className="d-flex ">
+          <div className="d-flex gap-3">
+            <div className="d-flex align-items-center justify-content-center">
+              <Image
+                // loader={imageLoader}
+                src={"/pngegg.png"}
+                alt="logo"
+                height={100}
+                width={100}
+              />
+            </div>
+
+            <div className="d-flex flex-column ">
+              <p className=" fs-5">
+                Bachelor of Technology in Computer Science Engineering
+              </p>
+              <div className="fs-5">
+                Dr. B C Roy Enginerring College, Durgapur
+              </div>
+              <div className="opacity-75">Cgpa: 8.88</div>
+              <div className=" opacity-50">2021-2025</div>
+            </div>
           </div>
-          <div className="d-flex flex-column">
-            <div className="">Bachalore in Computer Science</div>
-            <div className="">Dr. B C Roy Enginerring College</div>
-            <div className="">Cgpa: 8.88</div>
-          </div>
-          <div className="">2021-2025</div>
         </div>
       </div>
     </div>

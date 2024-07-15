@@ -27,41 +27,48 @@ const About = () => {
     <div id="About">
       <div className="container my-5">
         <div className="row py-5 ">
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-12">
             <h1 className="text-center">
-              Discover <span className="text-danger"> My Story </span>
+              Discover{" "}
+              <span className="text-danger text-decoration-underline">
+                {" "}
+                My Story{" "}
+              </span>
             </h1>
-            <div>
-              <p className="p-5">
+            <div className="p-5 ">
+              <p className=" fs-5">
                 {" "}
                 I am currently pursuing Bachelor&apos;s degree in Computer
                 Science and Engineering. I am currently learning Bankend-Web
                 Development.I am working hard to build web-based practical
-                applications using the latest web technologies.
-                {/* C, C++, Python and Front-end Web Development  */}
-                My goal is to become a software engineer.
+                applications using the latest web technologies. My goal is to
+                become a software engineer.
               </p>
             </div>
-            <div className="d-flex ps-5 gap-3">
+            <div className="d-flex justify-content-center px-3 gap-3 flex-wrap">
               {tabs.map((item, key) => (
                 <div
                   key={key}
-                  className={
-                    item === selectedTab
-                      ? "selected text-danger "
-                      : "text-warning"
-                  }
+                  className={`tabs
+                    ${
+                      item === selectedTab
+                        ? "selected text-danger "
+                        : "text-warning"
+                    }
+                  `}
                   onClick={() => setSelectedTab(item)}
                 >
-                  <h5 className="">{`${item} `}</h5>
+                  <h3 className="">{`${item} `}</h3>
                   {item === selectedTab ? (
-                    // link-underline-info
-                    <motion.div className="underline " layoutId="underline" />
+                    <motion.div
+                      className="text-decoration-underline "
+                      layoutId="underline"
+                    />
                   ) : null}
                 </div>
               ))}
             </div>
-            <div className="details ps-5 py-3 ">
+            <div className="details  py-3 ">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={selectedTab ? selectedTab : "empty"}
@@ -74,14 +81,6 @@ const About = () => {
                 </motion.div>
               </AnimatePresence>
             </div>
-          </div>
-          <div className="col-lg-4 col-sm-12 s border">
-            <Image
-              width={250}
-              height={250}
-              src={"/IMG-20240212-WA0073-modified.png"}
-              alt="Image"
-            />
           </div>
         </div>
       </div>

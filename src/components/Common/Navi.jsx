@@ -16,10 +16,10 @@ const Navi = () => {
       className="bg-body-tertiary"
     >
       <Container>
-        <Navbar.Brand href="/">S G</Navbar.Brand>
+        <Navbar.Brand href="/" className="fs-4">{`< SG >`}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto fs-5">
             <Nav.Link href="#About">About</Nav.Link>
             <Nav.Link href="#Skills">SKills</Nav.Link>
             <Nav.Link href="#Project">Project</Nav.Link>

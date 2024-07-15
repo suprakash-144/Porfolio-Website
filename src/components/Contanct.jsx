@@ -3,6 +3,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { TbBrandGmail, TbPhoneCall } from "react-icons/tb";
+
 const Contanct = () => {
   const {
     register,
@@ -11,8 +12,27 @@ const Contanct = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.gmail.com",
+    //   port: 587,
+    //   secure: false,
+    //   auth: {
+    //     user: process.env.MAIL_ID,
+    //     pass: process.env.MAIL_PASSWORD,
+    //   },
+    // });
+
+    // // send mail with defined transport object
+    // const info = await transporter.sendMail({
+    // from: `"Suprakash Gorai 👻" ${process.env.MAIL_ID}`, // sender address
+    // to: data.to, // list of receivers
+    // subject: data.subject, // Subject line
+    // text: data.text, // plain text body
+    // html: data.htm, // html body
+    // });
   };
   return (
     <div id="Contact" className="container mt-5 mb-4">
@@ -22,7 +42,7 @@ const Contanct = () => {
             <span className="text-warning">Send </span> A Message
           </h1>
           <form
-            className="d-flex gap-3 flex-column w-75 ps-5 pt-5"
+            className="d-flex gap-3 flex-column w-50 justify-content-center  pt-5"
             onSubmit={handleSubmit(onSubmit)}
           >
             <input
@@ -58,7 +78,7 @@ const Contanct = () => {
               <p id="email">
                 <TbBrandGmail />
                 <a href="mailto:suprakashgorai14@gmail.com">
-                  suprakashgorai14@gmail.com
+                  suprakashgorai175@gmail.com
                 </a>
               </p>
               <p id="phone">
