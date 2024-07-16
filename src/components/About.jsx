@@ -28,7 +28,7 @@ const About = () => {
       <div className="container my-5">
         <div className="row py-5 ">
           <div className="col-12">
-            <h1 className="text-center">
+            <h1 className="text-center ">
               Discover{" "}
               <span className="text-danger text-decoration-underline">
                 {" "}
@@ -52,18 +52,15 @@ const About = () => {
                   className={`tabs
                     ${
                       item === selectedTab
-                        ? "selected text-danger "
-                        : "text-warning"
+                        ? " selected text-danger "
+                        : "  text-warning"
                     }
                   `}
                   onClick={() => setSelectedTab(item)}
                 >
-                  <h3 className="">{`${item} `}</h3>
+                  <h2 className="">{`${item} `}</h2>
                   {item === selectedTab ? (
-                    <motion.div
-                      className="text-decoration-underline "
-                      layoutId="underline"
-                    />
+                    <motion.div className="underline" layoutId="underline" />
                   ) : null}
                 </div>
               ))}

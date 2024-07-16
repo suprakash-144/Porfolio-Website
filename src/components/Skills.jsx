@@ -60,7 +60,7 @@ const Skills = () => {
             {frontend.map((items, index) => (
               <motion.div
                 key={index}
-                className="badge border mx-1"
+                className="badge border m-1 lh-base my-1"
                 variants={item}
               >
                 {items}
@@ -81,7 +81,7 @@ const Skills = () => {
             {Backend.map((items, index) => (
               <motion.div
                 key={index}
-                className="badge border mx-1"
+                className="badge border m-1 lh-base my-1"
                 variants={item}
               >
                 {items}

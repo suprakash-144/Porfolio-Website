@@ -69,3 +69,12 @@ a,h1,h2,h3,h4,h5 {
 }
 
 /* About section ends */
+
+
+/* Project Section STarts */
+
+.porjectcontainer {
+  min-height: 30vh;
+}
+
+/* Project Section Ends */
