@@ -35,7 +35,7 @@ const Contanct = () => {
     // });
   };
   return (
-    <div id="Contact" className="container my-5">
+    <div id="Contact" className="container py-5 my-5">
       <div className="row row-gap-3">
         <div className="col-lg-6 col-sm-12">
           <div className="d-flex justify-content-center align-items-center flex-column">
@@ -72,7 +72,7 @@ const Contanct = () => {
           </div>
         </div>
         <div className="col-lg-6 col-sm-12">
-          <div className="d-flex justify-content-center align-items-center flex-column gap-3">
+          <div className="d-flex justify-content-center align-items-center flex-column gap-3 py-4">
             <div className="d-flex flex-column gap-3">
               <p className="d-flex align-items-center gap-2" id="email">
                 <TbBrandGmail />
@@ -89,7 +89,7 @@ const Contanct = () => {
                 // width="400"
                 // height="300"
                 style={{ border: 0, width: 50 + "vh" }}
-                allowFullscreen=""
+                allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
