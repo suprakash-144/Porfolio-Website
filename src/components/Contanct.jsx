@@ -3,6 +3,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { TbBrandGmail, TbPhoneCall } from "react-icons/tb";
+// import emailjs from "@emailjs/browser";
 
 const Contanct = () => {
   const {
@@ -12,27 +13,20 @@ const Contanct = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    console.log(data);
-
-    // const transporter = nodemailer.createTransport({
-    //   host: "smtp.gmail.com",
-    //   port: 587,
-    //   secure: false,
-    //   auth: {
-    //     user: process.env.MAIL_ID,
-    //     pass: process.env.MAIL_PASSWORD,
-    //   },
-    // });
-
-    // // send mail with defined transport object
-    // const info = await transporter.sendMail({
-    // from: `"Suprakash Gorai 👻" ${process.env.MAIL_ID}`, // sender address
-    // to: data.to, // list of receivers
-    // subject: data.subject, // Subject line
-    // text: data.text, // plain text body
-    // html: data.htm, // html body
-    // });
+  const onSubmit = (data) => {
+    // data.preventDefault();
+    // emailjs
+    //   .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, {
+    //     publicKey: "YOUR_PUBLIC_KEY",
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
   };
   return (
     <div id="Contact" className="container py-5 my-5">

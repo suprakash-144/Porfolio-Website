@@ -78,27 +78,37 @@ a,h1,h2,h3,h4,h5 {
   
 }
 
-.cgbox1{background-color: #2b4162;
+.cgbox1{
+  background-color: #2b4162;
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   }
-.cgbox2{background-color: #000000;
+.cgbox2{
+  background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);}
-.cgbox3{background-color: #166d3b;
+.cgbox3{
+  background-color: #166d3b;
   background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);}
-.cgbox4{background-color: #000000;
+.cgbox4{
+  background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);}
-.cgbox5{background-color: #000000;
+.cgbox5{
+  background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);}
-.cgbox6{background-color: #4834d4;
+.cgbox6{
+  background-color: #4834d4;
   background-image: linear-gradient(315deg, #4834d4 0%, #0c0c0c 74%);}
-.cgbox7{background-color: #130f40;
+.cgbox7{
+  background-color: #130f40;
   background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);}
-.cgbox8{background-color: #7ed6df;
+.cgbox8{
+  background-color: #7ed6df;
   background-image: linear-gradient(315deg, #7ed6df 0%, #000000 74%);}
-.cgbox9{background-color: #090947;
+.cgbox9{
+  background-color: #090947;
   background-image: linear-gradient(315deg, #090947 0%, #5a585a 74%);
   }
 .cgbox10{
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);}
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
 
 /* Project Section Ends */
